@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+   <head>
+    <meta charset="UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Εισαγωγή φόρμας </title>
+	<link rel="stylesheet" type="text/css" href="css/inputform.css"
+	</head>
+	<body>
+	<div id="inputform">
+	<h3>Εισάγετε τα στοιχεία σας:</h3>
+	<tr>
+	<form id="inputformid" method="post" action="return.php">
+	<table width="450px">
+	<fieldset>
+	<legend>Είσοδος:</legend>
+
+	Username : <input type="text" maxlength="10" size="15"><br>
+	Password : <input type="text" maxlength="10" size="15"><br>
+	</fieldset>
+		<td valign="top">
+		<label for="first_name">Όνομα </label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="first_name" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="AccomodationType">Είδος Δωματίου</label>
+	</td>
+	<td valign="top">
+
+		<select name="AccomodationType" id= "AccomodationType" style="width: 195px;" >
+		<option value="task1">Ξενοδοχείο</option>
+		<option value="task2">Ενοικιαζόμενο Δωμάτιο</option>
+		<option value="task3">Διαμέρισμα</option>
+		<option value="task4">Σπίτι</option>
+		</select>
+	</td>
+	</tr>	
+	<tr>
+		<td valign="top"">
+		<label for="area">Περιοχή</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="area" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"">
+		<label for="address">Διεύθυνση</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="address" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"">
+		<label for="tk">Τ.Κ.</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="tk" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+		<label for="email">Email Address</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="email" maxlength="80" size="30">
+		</td>
+ 
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="telephone">Τηλέφωνο</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="telephone" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="website">Website</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="website" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="price">Τιμή Δωματίου</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="price" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="date">Ημερομηνία Εισαγωγής<br> Αγγελίας</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="date" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="comments">Σχόλια</label>
+	</td>
+	<td valign="top">
+	<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+	</td>
+ 
+	</tr>
+	<tr>
+	<td colspan="3" style="text-align:right">
+	<input type="submit" value="Αποστολή">
+	<input type="button" onclick="myFunction()" value="Καθαρισμός">
+	</td>
+	</tr>
+</table>
+</form>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("inputformid").reset();
+}
+</script>
+
+</body>
+</html>

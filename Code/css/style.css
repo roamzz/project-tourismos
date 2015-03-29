@@ -1,0 +1,232 @@
+body {
+	
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	font-family:Tahoma, sans-serif;
+	font-size:14px;
+	width:100%;
+	background-color:#B8BEC4;
+	
+
+}
+h2 {	width: 100%;
+	margin: 0 auto; 
+	text-align: left;
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+	color:#ffffff;
+
+}
+h1 a {color:#ffffff;
+text-decoration:none;
+}
+#top-nav {
+	background-color:#000000;
+    color:#ffffff;
+    text-align:right;
+    padding:10px;
+	padding-left: 15px;
+    padding-right: 15px;
+	
+}
+#header{
+
+	background-color: rgb(118, 171, 219); /*#4188d0;*/
+	text-align:left;
+	margin-top:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	 padding-left: 15px;
+    padding-right: 15px;
+	color:#ffffff;
+	display: block;
+	min-height: 80px;	
+	
+}
+
+
+ 
+
+#header-social{
+text-align:right;
+
+}
+#header-text{
+text-align:center;
+}
+
+#top-nav a{
+	padding:10px;
+}
+#header-social a {
+padding:1px!important;
+padding-top:100px;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    /*clear:both;*/
+    text-align:center;
+    padding:5px; 
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+
+/* My Links  TOP-NAV  */
+#footer a:link { color: white;
+	text-decoration:none;}
+	#footer a:visited { color: white;
+	text-decoration:none;}
+	#footer a:hover {
+    color: red;
+	text-decoration:underline;
+}
+#top-nav a:link {
+    color: white;
+	text-decoration:none;
+}
+
+#top-nav a:visited {
+    color: white;
+	text-decoration:none;
+}
+
+#top-nav a:hover {
+    color: red;
+	text-decoration:underline;
+}
+
+#top-nav a:active {
+    color: red;
+	text-decoration:none;
+}
+
+
+
+   
+    input#gobutton1{
+    cursor:pointer; 
+    padding:25px 25px; /*add some padding to the inside of the button*/
+    /*background:#35b128; */
+	background-color: rgb(118, 171, 219);
+    border:1px solid white; 
+	width:280px;
+	height:100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#f3f3f3;
+    font-size:1.1em;
+    }
+   
+    input#gobutton1:hover, input#gobutton1:focus{
+    background-color :#399630;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+    }
+	 input#gobutton2{
+    cursor:pointer; 
+    padding:25px 25px; /*add some padding to the inside of the button*/
+    background-color: rgb(118, 171, 219);
+    border:1px solid white; 
+   	width:280px;
+	height:100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#f3f3f3;
+    font-size:1.1em;
+    }
+   
+    input#gobutton2:hover, input#gobutton2:focus{
+    background-color :#399630;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+    }
+
+#buttons {
+	position:absolute;
+	margin-top:10%;
+	margin-left:10px;
+	left:22%;
+	z-index:1000;
+	
+}
+#search_form {
+
+	float:left;
+
+
+	}
+#search_form input[type="text"]{
+  height:20px;
+  width:200px;
+}	
+#search_form input[type="submit"]
+{
+   width:100px;
+   height:25px;
+   padding-left:0px;
+   cursor: pointer;
+}
+#search_form input[type="text"]:focus,
+#search_form textarea:focus
+{
+  color : #009;
+  border : 1px solid #990000;
+  background-color : #ffff99;
+  font-weight:bold;
+}
+#filter_form { 
+	
+	
+ 
+	}
+#filter_form input[type="submit"]
+{
+   width:100px;
+   height:25px;
+   padding-left:0px;
+   cursor: pointer;
+}
+#filter_form input[type="text"]{
+  height:20px;
+  width:200px;
+}
+#filter_form input[type="text"]:focus,
+#filter_form textarea:focus
+{
+  color : #009;
+  border : 1px solid #990000;
+  background-color : #ffff99;
+  font-weight:bold;
+}
+#checkbox_form{float: right;
+clear:both;
+ border-radius: 8px;
+}
+
+#checkbox_form:hover input[type="submit"]{
+background-color:#1dabb8; 
+cursor: pointer;
+ }
+#filter_form:hover input[type="submit"]
+{background-color:#1dabb8; }
+#search_form:hover input[type="submit"]{background-color:#1dabb8;}
+{

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <meta charset="UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>ΑΓΓΕΛΙΕΣ ΤΟΥΡΙΣΤΙΚΩΝ ΚΑΤΑΛΥΜΑΤΩΝ </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/inputform.css"/>	
+
+   </head>
+  <!-- <body background="images/sidebarbg.jpg">-->
+  <body>
+   
+   <div id="top-nav">
+	<a href="index.html">HOME</a>
+	<a href="about.html">ABOUT</a>
+	<a href="contactform.html">CONTACT</a>
+	<a href="register.html">REGISTER</a>
+
+	</div>	
+
+	<div id="header">
+	<h1><a href="index.html">Τουρισμός - Καταλύματα</h1></a>
+	</div>
+	<div id="main">
+	<div id="inputform">
+	<h3>Εισάγετε τα στοιχεία σας:</h3>
+		<p>(Εισάγετε τα στοιχεία σας εφόσον έχετε κάνει register).</p>
+	
+	<form id="inputformid" onsubmit="return validateForm()" method="post" action="return.php" accept-charset="UTF-8">
+	<table width="450px">
+	
+	<td valign="top">
+	<label for="user">Username </label>
+	</td>
+	<td valign="top">
+	<input name="user" type="text" maxlength="10" size="15"><br>
+	</td>
+	<tr>
+	<td valign="top">
+	<label for="password">Password </label>
+	</td>
+	<td valign="top">
+	<input name="password" type="password" maxlength="10" size="15">
+	</td>
+	<tr>
+	<tr>
+	<td valign="top">
+
+		<label for="name">Όνομα-Επωνυμία </label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="name" maxlength="50" size="30">
+		</td>
+	</tr>	
+	<tr>
+	<td valign="top">
+	<label for="AccomodationType">Είδος Δωματίου</label>
+	</td>
+	<td valign="top">
+		
+		<select name="AccomodationType" id= "AccomodationType">
+		<option value="">Παρακαλώ επιλέξτε κατηγορία...</option>    
+		<option value="Ξενοδοχείο">Ξενοδοχείο</option>
+		<option value="Ενοικιαζόμενα Δωμάτια">Ενοικιαζόμενα Δωμάτια</option>
+		<option value="Διαμέρισμα">Διαμέρισμα</option>
+		<option value="Σπίτι">Σπίτι</option>
+		</select>
+	</td>
+	</tr>	
+	<tr>
+		<td valign="top"">
+		<label for="area">Περιοχή</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="area" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"">
+		<label for="address">Διεύθυνση</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="address" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"">
+		<label for="tk">Τ.Κ.</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="tk" maxlength="50" size="30">
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+		<label for="email">Email Address</label>
+		</td>
+		<td valign="top">
+		<input  type="text" name="email" maxlength="80" size="30">
+		</td>
+ 
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="telephone">Τηλέφωνο</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="telephone" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="website">Website</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="website" maxlength="30" size="30">
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+	<label for="price">Τιμή Δωματίου (€)</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="price" maxlength="30" size="30">
+	</td>
+	</tr>
+	<!--<tr>
+	<td valign="top">
+	<label for="date">Ημερομηνία Εισαγωγής<br> Αγγελίας</label>
+	</td>
+	<td valign="top">
+	<input  type="text" name="date" maxlength="30" size="30">
+	</td>
+	</tr>-->
+	<tr>
+	<td valign="top">
+	<label for="comments">Σχόλια</label>
+	</td>
+	<td valign="top">
+	<textarea  name="comments" maxlength="1000" cols="37" rows="6"></textarea>
+	</td>
+ 	</tr>
+	<tr>
+	
+	<td colspan="3" style="text-align:right">
+	<input type="button" onclick="myFunction()" value="Καθαρισμός">
+	<input type="submit" value="Υποβολή">
+	
+	</td>
+	</tr>
+	
+	</table>
+</form>
+</div>
+
+
+	</div>
+ 
+   
+
+	
+
+	
+<script>
+function myFunction() {
+    document.getElementById("inputformid").reset();
+}
+	
+function validateForm() {
+    var x = document.forms["inputformid"]["user"].value;
+    if (x==null || x=="") {
+        alert("Please enter your username");
+        return false;
+    }
+	var x = document.forms["inputformid"]["email"].value;
+    if (x==null || x=="") {
+        alert("Please enter your email");
+        return false;
+    }
+	var x = document.forms["inputformid"]["password"].value;
+    if (x==null || x=="") {
+        alert("Please enter your password");
+        return false;
+    }
+}
+	
+</script>
+
+
+	
+   </body>
+
+
+
+
+
+</html>
